@@ -1,0 +1,101 @@
+@media (min-width : 992px) {
+  .offcanvas {
+    visibility      : visible;
+    position        : relative;
+    background      : none;
+    border          : none;
+    justify-content : end;
+    
+  }
+}
+
+
+
+
+@media (max-width : 992px) {
+  .offcanvas {
+    width : 250px !important;
+    
+  }
+  .offcanvas-body, .offcanvas-header{
+    background-image: linear-gradient( 76.3deg,  rgba(44,62,78,1) 12.6%, rgba(69,103,131,1) 82.8% );
+  }
+
+  .offcanvas-start-lg {
+    top          : 0;
+    left         : 0;
+    border-right : 1px solid rgba(0, 0, 0, .2);
+    transform    : translateX(-100%);
+  }
+
+}
+.navbar{
+  background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.offcanvas{
+  background: transparent;
+}
+.navbar-nav li a {
+color: white !important;
+}
+
+.offcanvas-body{
+  visibility: visible;
+}
+.heading{
+  border-bottom: 5px solid red;
+}
+.list-items{
+  margin-top: 20px;
+  border-bottom: 0.5px solid black;
+}
+.title-bottom{
+  font-size:xx-large;
+  font-weight: 600;
+}
+.card{
+  border: none;
+}
+.card-header{
+  border-bottom: none;
+}
+
+.collapse-contents{
+  list-style-image: url('../images/arrow.svg');
+}
+
+.collapse-contents{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.collapse-contents li {
+  padding-bottom: 10px;
+}
+:root {
+	--text: #1E1F26;
+	--c1: #0074E0;
+	--c2: #1DD760;
+}
+.links .link-content li::marker{
+  content: url('data:image/svg+xml;charset=UTF-8,');
+}
+.links .link-content{
+  color: var(--c2);
+}
+.footer{
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.bottom{
+
+  padding:  3px 8px;
+  color: #333;
+  background-color: rgb(184, 252, 95);
+}
+.policy{
+  float: right;
+}
