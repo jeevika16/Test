@@ -214,7 +214,15 @@ border-bottom: var(--red);
     padding-top: 70px;
   }
 
+.collapse-row > div > .card-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
+.collapse-row > div > div> a:hover{
+  color: black;
+  
+}
 .collapse-contents{
   margin-left: 20px;
   margin-right: 20px;
