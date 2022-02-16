@@ -2,7 +2,7 @@
   --red: rgb(204,3,3);
   --bullet: #ffd900;
   --green: #1dd760;
-  --navbarColor : linear-gradient( 76.3deg,  rgba(253,251,251,0.7) 12.6%, rgba(235,237,238,0.7) 82.8% );
+  --navbarColor : #DAD2CA;
   
 }
 
@@ -70,7 +70,7 @@
     height: 100%;
   } 
   .offcanvas-body, .offcanvas-header{
-    background-image: var(--navbarColor)
+    background-color: var(--navbarColor)
     
   }
 
@@ -83,7 +83,7 @@
 
 }
 .navbar{
-  background-image: var(--navbarColor);
+  background-color: var(--navbarColor);
 
 }
 .offcanvas{
