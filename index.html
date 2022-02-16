@@ -6,10 +6,11 @@
   <meta name='viewport'
     content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-  <title>Bootstrap-5-offcanvas-navbar-menu</title>
-  <link rel='stylesheet' href='css/bootstrap.min.css'>
+  <title>Michael Electronics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/58d0d9ef9a.js" crossorigin="anonymous"></script>
   <link rel='stylesheet' href='css/style.css'>
 
 
@@ -18,7 +19,8 @@
 <body>
 
 
-  <nav class='navbar navbar-expand-lg navbar-light '>
+  
+  <nav class='navbar navbar-expand-lg navbar-light sticky-top' id="home">
     <div class='container'>
       <div class="row">
         <div class="col new-col">
@@ -39,7 +41,9 @@
       <div class='offcanvas offcanvas-start-lg ' tabindex='-1' id='offcanvasExample'
         aria-labelledby='offcanvasExampleLabel'>
         <div class='offcanvas-header d-flex d-lg-none'>
-          <h5 class='offcanvas-title text-white' id='offcanvasExampleLabel'>Navbar</h5>
+          <h5 class='offcanvas-title text-white' id='offcanvasExampleLabel'>
+            <img src="./images/MICHAEL LOGO 2.png" class="img-logo img-fluid" alt="LOGO" >
+          </h5>
           <a href='javascript:void(0) ' class='text-reset p-0' data-bs-dismiss='offcanvas' aria-label='close'>
             <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#FFFFFF' class='bi bi-x-circle'
               viewBox='0 0 16 16'>
@@ -50,18 +54,18 @@
           </a>
         </div>
         <div class='offcanvas-body p-lg-0'>
-          <ul class='navbar-nav '>
+          <ul class='navbar-nav ' id="navbar-font">
             <li class='nav-item'>
-              <a class='nav-link active' aria-current='page' href='#'>Home</a>
+              <a class='nav-link active' aria-current='page' href='#home'>Home</a>
             </li>
             <li class='nav-item'>
-              <a class='nav-link active' aria-current='page' href='#'>About</a>
+              <a class='nav-link active' aria-current='page' href='#about'>About</a>
             </li>
             <li class='nav-item'>
               <a class='nav-link active' aria-current='page' href='#'>Skills</a>
             </li>
             <li class='nav-item'>
-              <a class='nav-link active' aria-current='page' href='#'>Contact</a>
+              <a class='nav-link active' aria-current='page' href='#contact'>Contact</a>
             </li>
           </ul>
         </div>
@@ -69,11 +73,48 @@
     </div>
   </nav>
 
-  <section class="text-gray-600 body-font bg-dark text-white m-5">
+<!-- Top Carousel Start -->
+<div id="carouselExampleDark" class="carousel carousel-light slide top-carousel" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active top-carousel-item" data-bs-interval="4000">
+      <img src="./images/carousel-1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption top-carousel-caption d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item top-carousel-item" data-bs-interval="4000">
+      <img src="./images/carousel-1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption top-carousel-caption d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item top-carousel-item">
+      <img src="./images/carousel-1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption top-carousel-caption d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+<!-- Top Carousel End -->
+ 
+  <section class="text-gray-600 body-font  text-white py-5 product-card ">
     <div class="container px-4 py-17 mx-auto">
-      <div class="flex flex-wrap -m-4   ">
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <h4 class="text-center my-2">Title</h4>
+      <h1 class="heading text-dark mb-5">
+        Some details on the product
+      </h1>
+      <div class="flex flex-wrap -m-4   product-card-content">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full ">
+          <h4 class="text-center my-2 ">Title</h4>
           <a class="block relative h-48 rounded overflow-hidden">
             <img alt="ecommerce" class="object-cover object-center w-full h-full block"
               src="https://dummyimage.com/420x260">
@@ -158,24 +199,27 @@
     </div>
   </section>
 
-  <div class="container mb-4">
+
+  <div class="container my-20 py-50" id="about">
     <h3 class="heading">Turnkey, PCB Assembly & Electronics Contract Manufacturing Services / EMS Company</h3>
   </div>
 
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h2>OUR MANUFACTURING ABILITIES</h2>
-        <ol>
-          <li class="my-4">Manufacturing Center:- Bangalore India</li>
-          <li class="my-4">Marketing Center:- Massachusetts, United State, Bangalore & Delhi India</li>
-          <li class="my-4">otal Plant Capacity:- 1094K CPH</li>
-          <li class="my-4">Total Facility:- 50000 SQ. MTS.</li>
-          <li class="my-4">Lead-Free, ESD Protected & Clean Environment Std. Class 8&9</li>
-
+        <h2 class="mini-heading mb-5">OUR MANUFACTURING ABILITIES</h2>
+        <ol class="rounded">
+          <li><a href="#">Manufacturing Center:- Bangalore India</a></li>
+          <li><a href="#">Marketing Center:- Massachusetts, United State, Bangalore & Delhi India</a></li>
+          <li><a href="#">Total Plant Capacity:- 1094K CPH</a></li>
+          <li><a href="#">Total Facility:- 50000 SQ. MTS.</a></li>
+          <li><a href="#">Lead-Free, ESD Protected & Clean Environment Std. Class 8&9</a></li>
         </ol>
 
-        <div class="form bg-warning mt-5">
+
+        <div id="contact">
+        <div class="form bg-warning mt-5" >
+          
           <h1 class="p-4 text-center">Get A Free Quote</h1>
           <form class="px-5">
             <div class="mt-4">
@@ -212,17 +256,24 @@
 
           </form>
         </div>
+      </div>
 
       </div>
       <div class="col-md-6">
 
-        <div class="row">
-          <div class="col-6 mb-3">
+        <div class="row icon-styling mt-4">
+          <div class="col-6 mb-3 ">
+            <i class="fa-solid fa-keyboard "></i>
             Instant Online Quote</div>
-          <div class="col-6 mb-3">Affordable Pricing</div>
           <div class="col-6 mb-3">
+            <i class="fa-solid fa-tags "></i>
+            Affordable Pricing</div>
+          <div class="col-6 mb-3">
+            <i class="fa-solid fa-bus "></i>
             Quick Turn Around Services</div>
-          <div class="col-6 mb-3">100% Quality Guarantee</div>
+          <div class="col-6 mb-3">
+            <i class="fa-regular fa-thumbs-up "></i>
+            100% Quality Guarantee</div>
         </div>
 
         <div id="carouselExampleDark" class="carousel carousel-dark slide mt-5" data-bs-ride="carousel">
@@ -343,12 +394,17 @@
             <h2 class="title-bottom text-center">Some Random Title</h2>
             <div class="links">
               <ul class="link-content mx-3">
-                <a href="http://">
-                  <li>Random Data</li>
-                </a>
-                <li>Random Data</li>
-                <li>Random Data</li>
-                <li>Random Data</li>
+                
+                  <li><a href="#">Random Data</a></li>
+                  <li><a href="#">Random Data</a></li>
+                  <li><a href="#">Random Data</a></li>
+                  <li><a href="#">Random Data</a></li>
+                  <li><a href="#">Random Data</a></li>
+                  <li><a href="#">Random Data</a></li>
+                  <li><a href="#">Random Data</a></li>
+                  <li><a href="#">Random Data</a></li>
+                
+              
               </ul>
             </div>
           </div>
@@ -364,34 +420,31 @@
         <div class="col-sm-3 py-3">
           <h3 style="text-align: left;" class="mb-3"> Quick Links</h3>
           <p style="text-align: left;">
-            <a class="footer" href="https://www.eitplems.com/electronic-manufacturing-services">EMS </a><br>
-            <a class="footer" href="https://eitplems.com/pcb-assembly-service-bangalore/">PCBA </a><br>
-            <a class="footer mb-5" href="https://www.eitplems.com/enquiry/">RFQ</a><br>
+            <a class="footer" href="#">EMS </a><br>
+            <a class="footer" href="#">PCBA </a><br>
+            <a class="footer mb-5" href="#">RFQ</a><br>
             <div>
-              <a  class="footer"href="https://www.eitplems.com/about-eitpl/" >About Us</a></p>
-              <li> <a  class="footer" href="https://www.eitplems.com/why-partner-with-us/">Why Partner With Us</a></li>
-              <li> <a  class="footer" href="https://www.eitplems.com/gallery/" >Gallery</a></li>
-              <li> <a class="footer" href="https://www.eitplems.com/wp-content/uploads/2018/03/EITPL-Corporate-Brochure-2.pdf" >Download Brochure</a></li>
-              <li> <a class="footer" href="https://www.eitplems.com/news-events/" >News &amp; Events</a></li>
+              <a  class="footer"href="#" >About Us</a></p>
+              <li> <a  class="footer" href="#">Why Partner With Us</a></li>
+              <li> <a  class="footer" href="#" >Gallery</a></li>
+              <li> <a class="footer" href="#" >Download Brochure</a></li>
+              <li> <a class="footer" href="#" >News &amp; Events</a></li>
            
             </div>
         </div>
         <div class="col-sm-3 py-3">
           <h4 class="mb-3"> Manfacturing Facilities</h4>
-          <p> <a class="footer" href="https://eitplems.com/pcb-prototyping/">PCBA Prototyping </a><br>
-            <a class="footer" href="https://www.eitplems.com/printed-circuit-board-assembly/">Printed circuit board
-              assembly </a><br>
-            <a class="footer" href="https://www.eitplems.com/surface-mount-technology-services/">Surface mount
-              Assembly</a><br>
-            <a class="footer" href="https://www.eitplems.com/wave-soldering-services/">Wave Soldering </a><br>
-            <a class="footer" href="https://www.eitplems.com/pcba-conformal-coating/">PCBA Conformal Coating </a><br>
-            <a class="footer" href="https://www.eitplems.com/x-ray-inspection-service/">X-RAY Inspection</a><br>
-            <a class="footer" href="https://www.eitplems.com/automatic-optical-inspection-services/">Automatic optical
-              Inspection</a><br>
-            <a class="footer" href="https://eitplems.com/box-build-product-integration/">Box Build Product Integration
+          <p> <a class="footer" href="#">PCBA Prototyping </a><br>
+            <a class="footer" href="#">Printed circuit board assembly </a><br>
+            <a class="footer" href="#">Surface mount Assembly</a><br>
+            <a class="footer" href="#">Wave Soldering </a><br>
+            <a class="footer" href="#">PCBA Conformal Coating </a><br>
+            <a class="footer" href="#">X-RAY Inspection</a><br>
+            <a class="footer" href="#">Automatic opticalI nspection</a><br>
+            <a class="footer" href="#">Box Build Product Integration
             </a><br>
           </p>
-          <h3><a class="footer" href="https://eitplems.com/blog/"> Blogs </a></h3>
+          <h3><a class="footer" href="#"> Blogs </a></h3>
         </div>
         <div class="col-sm-3 py-3">
           <h4 class="mb-3"> Plant Address</h4>
@@ -400,27 +453,27 @@
           </p>
 
           <p>
-            <a class="footer mb-2" href="https://www.eitplems.com/contact/">CONTACT US</a><br>
-            <a class="footer" href="https://eitplems.com/">www.eitplems.com</a><br>
-            <a class="footer" href="mailto:info@eitpl.com">info@eitpl.com</a><br>
-            <a class="footer" href="tel:9650274009"> For Sale +91-9650274009 </a><br>
-            <a class="footer" href="tel:9910337896">For Sale +91-9910337896 </a>
+            <a class="footer mb-2" href="#">CONTACT US</a><br>
+            <a class="footer" href="#">www.eitplems.com</a><br>
+            <a class="footer" href="#">info@eitpl.com</a><br>
+            <a class="footer" href="#"> For Sale +91-9650274009 </a><br>
+            <a class="footer" href="#">For Sale +91-9910337896 </a>
           </p>
-          <a class="footer" href="https://eitplems.com/pcb-assembly-services-in-noida/">Noida</a>|
-          <a class="footer" href="https://eitplems.com/pcb-assembly-services-in-delhi/">Delhi</a>|
-          <a class="footer" href="https://eitplems.com/pcb-assembly-services-in-gurgaon/">Gurgaon</a>|
-          <a class="footer" href="https://eitplems.com/pcb-assembly-services-in-kolkata/">Kolkata</a>
+          <a class="footer" href="#">Noida</a>|
+          <a class="footer" href="#">Delhi</a>|
+          <a class="footer" href="#">Gurgaon</a>|
+          <a class="footer" href="#">Kolkata</a>
         </div>
         <div class="col-sm-3 py-3">
           <h4 class="mb-3"> Our Branches</h4>
           <p><strong> East India Technologies - Bangalore<br></strong></p>
           <h5>USA Office</h5>
           <p> 34 Delaney street stow, Massachusetts - 01775<br>
-            <a class="footer" href="mailto:marketing.usa@eitpl.com">Email: marketing.usa@eitpl.com</a>
+            <a class="footer" href="#">Email: marketing.usa@eitpl.com</a>
           </p>
           <h3>Career</h3>
-          <h5> <a class="footer" href="tel:9164950110">For HR +91-9164950110</a></h5>
-          <h5> <a class="footer" href="mailto:hr.blr@eitpl.com">hr.blr@eitpl.com</a></h5>
+          <h5> <a class="footer" href="#">For HR +91-9164950110</a></h5>
+          <h5> <a class="footer" href="#">hr.blr@eitpl.com</a></h5>
         </div>
       </div>
     </div>
@@ -429,15 +482,17 @@
     <div class="bottom">
       <b>
         <p>Copyright © East India Technologies (P) Ltd. 2018 All Rights Reserved. Powered By
-          <a class="footer" target="_blank" href="https://www.eduhivecreativestudio.com">Eduhive Creative Studio</a>
+          <a class="footer" target="_blank" href="#">Eduhive Creative Studio</a>
           <a class=" policy"> Privacy Policy</a>
         </p>
       </b>
     </div>
   </div>
   <!-- Footer End -->
-
-  <script src='js/bootstrap.bundle.min.js'></script>
+ 
+<script src="/JS/nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
 </body>
 
