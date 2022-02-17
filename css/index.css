@@ -309,3 +309,47 @@
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   border-radius: 20px;
 }
+
+
+
+.btn-grad {background-image: linear-gradient(to right, #403A3E 0%, #BE5869  51%, #403A3E  100%)}
+.btn-grad {
+  
+   padding: 10px 25px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+  
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+ 
+ .button-style {background-image: linear-gradient(to right, #ee0979 0%, #ff6a00  51%, #ee0979  100%)}
+ .button-style {
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .button-style:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
