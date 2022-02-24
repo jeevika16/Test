@@ -2,7 +2,7 @@
   --red: rgb(204, 3, 3);
   --bullet: #ffd900;
   --green: #1dd760;
-  --navbarColor: #dad2ca;
+  --navbarColor: white;
 }
 
 @media (max-width: 767px) {
@@ -85,17 +85,7 @@
   }
   .offcanvas-body,
   .offcanvas-header {
-    background: #ece9e6; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #ffffff,
-      #ece9e6
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #ffffff,
-      #ece9e6
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: var(--navbarColor);
   }
 
   .offcanvas-start-lg {
@@ -106,17 +96,8 @@
   }
 }
 .navbar {
-  background: #ece9e6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ffffff,
-    #ece9e6
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ffffff,
-    #ece9e6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background-color: var(--navbarColor);
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .offcanvas {
   background: transparent;
@@ -166,8 +147,17 @@
 .product-card {
   background-image: var(--navbarColor);
 }
+
 .product-card-content > div > h4 {
-  color: black;
+  color: var(--red);
+  padding-top: 5px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 1em;
+ 
+}
+.product-card-content > div:hover {
+  transform: scale(1.2); 
 }
 #about {
   padding-top: 100px;
@@ -253,11 +243,20 @@
 .collapse-row > div > .card-header {
   padding-top: 20px;
   padding-bottom: 20px;
+  border-radius: 7px;
+ 
+}
+.collapse-row > div > div > a{
+  color: black;
+  text-decoration: none;
+  float: left;
 }
 
 .collapse-row > div > div > a:hover {
-  color: black;
+  color: black; 
+  
 }
+
 .collapse-contents {
   margin-left: 20px;
   margin-right: 20px;
