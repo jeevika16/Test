@@ -164,9 +164,14 @@
 }
 
 .mini-heading {
-  font-size: 2vw;
+  font-size: 1.5em;
   font-weight: 600;
   color: var(--red);
+}
+.contact-heading{
+  color: rgb(65, 65, 65);
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 .list-items {
@@ -311,25 +316,6 @@
 
 
 
-.btn-grad {background-image: linear-gradient(to right, #403A3E 0%, #BE5869  51%, #403A3E  100%)}
-.btn-grad {
-  
-   padding: 10px 25px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-  
-   border-radius: 10px;
-   display: block;
- }
-
- .btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
 
 
  
@@ -341,7 +327,9 @@
     transition: 0.5s;
     background-size: 200% auto;
     color: white;            
-    box-shadow: 0 0 20px #eee;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
     display: block;
   }
