@@ -42,15 +42,23 @@
 .para-spacing{
     line-height: 1.7;
 }
+.list-spacing{
+  line-height: 2;
+}
 .list-style-column{
     column-count: 2;
     column-gap: 20px;
+}
+.list-style-column-three{
+  column-count: 3;
+  column-gap: 20px;
+  
 }
 div.list-style-column{
 
     list-style-position: outside;
 }
-.list-style-column li{
+.list-style-column li,.list-style-column-three li{
   margin-bottom: 10px;
   
 }
@@ -76,4 +84,39 @@ div.list-style-column{
     .list-style-column{
         column-count: 1;
     }
+}
+
+.heading-high{
+  font-size: 2em;
+  font-weight: 500;
+  text-align: left;
+}
+.heading-medium{
+  font-size: 1.7em;
+  font-weight: 500;
+  color: rgb(204, 3, 3);;
+}
+.heading-medium-black{
+  font-size: 1.7em;
+  font-weight: 500;
+}
+.heading-small{
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.list-content li::before{
+  content: "\f192";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 10px;
+}
+.list-content li{
+  margin-top: 10px;
+}
+.para-spacing{
+  line-height: 1.7;
+}
+.contact-heading{
+  color: rgb(65, 65, 65);
+  font-size: 1.5em;
+  font-weight: 600;
 }

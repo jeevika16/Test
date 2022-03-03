@@ -156,6 +156,7 @@
   font-size: 1em;
  
 }
+
 .product-card-content > div:hover {
   transform: scale(1.2); 
 }
@@ -181,6 +182,7 @@
 .title-bottom {
   font-size: xx-large;
   font-weight: 600;
+  padding: 1em ;
 }
 .card {
   border: none;
@@ -220,7 +222,10 @@
   left: -1.3em;
   top: 50%;
   margin-top: -1.3em;
-  background: #f9dd94;
+  background: #FFB75E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
   height: 3em;
   width: 3em;
   line-height: 2.5em;
@@ -232,7 +237,10 @@
   transition: all 0.3s ease-out;
 }
 .icon-styling > div > i {
-  background: #f9dd94;
+  background: #FFB75E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
   padding: 1em;
   border-radius: 50%;
   margin-right: 10px;
@@ -339,4 +347,10 @@
     color: #fff;
     text-decoration: none;
   }
+
+#back-to-top{
+  color: #FFB75E;
+  
+}
+  
  
