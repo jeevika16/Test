@@ -1,88 +1,24 @@
-.ems-image{
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-height: 400px;
+.ems-image {
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 400px;
 }
-@media(max-width:600px){
-  .ems-image{
+@media (max-width: 600px) {
+  .ems-image {
     max-height: 100px;
+  }
 }
-}
-.ourservices > li > a:hover{
-    text-decoration: underline;
-    text-decoration-color: black;
-    color: black;
-}
-.ourservices > li{
-    background: #ece9e6; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to left,
-      #f7f4f0,
-      #ece9e6
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to left,
-      #f7f4f0,
-      #ece9e6
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-}
-.ourservices{
-    background: #ece9e6; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to left,
-      #f7f4f0,
-      #ece9e6
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to left,
-      #f7f4f0,
-      #ece9e6
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 10px;  
-    border-radius: 20px;
-}
-.para-spacing{
-    line-height: 1.7;
-}
-.list-spacing{
-  line-height: 2;
-}
-.list-style-column{
-    column-count: 2;
-    column-gap: 20px;
-}
-.list-style-column-three{
-  column-count: 3;
-  column-gap: 20px;
-  
-}
-.list-style{
-  column-gap: 20px;
 
-}
-.list-style > li {
-  border: 0;
-  list-style-type: disc;
-  line-height: 1.7;
-  
-}
-.list-style-disc{
-  list-style-type: circle;
-  line-height: 1.7;
 
+.ourservices > li > a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: black;
 }
-div.list-style-column{
-
-    list-style-position: outside;
-}
-.list-style-column li,.list-style-column-three li{
-  margin-bottom: 10px;
-  
-}
-.collapse-style, .card-body{
+.ourservices > li {
   background: #ece9e6; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to left,
@@ -94,62 +30,123 @@ div.list-style-column{
     #f7f4f0,
     #ece9e6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
-
-.collapse-style{
+.ourservices {
+  background: #ece9e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f7f4f0,
+    #ece9e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #f7f4f0,
+    #ece9e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 10px;
   border-radius: 20px;
 }
-@media (max-width: 988px){
-    .list-style-column{
-        column-count: 1;
-    }
+.para-spacing {
+  line-height: 1.7;
+}
+.list-spacing {
+  line-height: 2;
+}
+.list-style-column {
+  column-count: 2;
+  column-gap: 20px;
+}
+.list-style-column-three {
+  column-count: 3;
+  column-gap: 20px;
+}
+.list-style {
+  column-gap: 20px;
+}
+.list-style > li {
+  border: 0;
+  list-style-type: disc;
+  line-height: 1.7;
+}
+.list-style-disc {
+  list-style-type: circle;
+  line-height: 1.7;
+}
+div.list-style-column {
+  list-style-position: outside;
+}
+.list-style-column li,
+.list-style-column-three li {
+  margin-bottom: 10px;
+}
+.collapse-style,
+.card-body {
+  background: #ece9e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f7f4f0,
+    #ece9e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #f7f4f0,
+    #ece9e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.heading-high{
+.collapse-style {
+  border-radius: 20px;
+}
+@media (max-width: 988px) {
+  .list-style-column {
+    column-count: 1;
+  }
+}
+
+.heading-high {
   font-size: 2em;
   font-weight: 500;
   text-align: left;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.heading-medium{
+.heading-medium {
   font-size: 1.7em;
   font-weight: 500;
   color: rgb(204, 3, 3);
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.heading-medium-black{
+.heading-medium-black {
   font-size: 1.7em;
   font-weight: 500;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.heading-small{
+.heading-small {
   font-size: 1.2em;
   font-weight: 500;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.list-content li::before{
+.list-content li::before {
   content: "\f192";
   font-family: "Font Awesome 5 Free";
   margin-right: 10px;
 }
-.list-content li{
+.list-content li {
   margin-top: 10px;
 }
-.para-spacing{
+.para-spacing {
   line-height: 1.7;
   font-size: 1.1em;
 }
 
-.contact-heading{
+.contact-heading {
   color: rgb(65, 65, 65);
   font-size: 1.5em;
   font-weight: 600;
 }
-.table{
+.table {
   margin: auto;
 }
