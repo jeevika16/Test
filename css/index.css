@@ -95,6 +95,83 @@
     transform: translateX(-100%);
   }
 }
+
+ul.socialIcons {
+  padding: 0;
+  text-align: center;
+}
+
+.socialIcons li {
+  background-color: yellow;
+  list-style: none;
+  display: inline-block;
+  margin: 4px;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.socialIcons li a {
+  display: block;
+  padding: .87em;
+  min-width: 2.89571429em;
+  max-width: 2.89571429em;
+  
+  white-space: nowrap;
+  line-height: 1em; /*it's working only when you write text with icon*/
+  transition: 0.5s;
+  text-decoration: none;
+  font-family: arial;
+  color: #fff;
+}
+
+.socialIcons li i {
+  margin-right: 1em;
+}
+
+.socialIcons li:hover a {
+  max-width: 200px;
+  padding-right: 1em;
+}
+
+.socialIcons .facebook {
+  background-color: #3b5998;
+}
+
+.socialIcons .twitter {
+  background-color: #00aced;
+}
+
+.socialIcons .instagram {
+  background-color: #cd486b;
+}
+
+.socialIcons .pinterest {
+  background-color: #c92228;
+}
+
+.socialIcons .steam {
+  background-color: #666666;
+}
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+
 .navbar {
  background-color: var(--navbarColor);
  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
