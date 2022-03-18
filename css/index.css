@@ -95,63 +95,47 @@
     transform: translateX(-100%);
   }
 }
+#offcanvas-button{
+  border: 0;
+}
 
+@media(min-width:991px){
+  #nav-list-product{
+    display: none;
+  }
+}
 ul.socialIcons {
   padding: 0;
+  margin: 0;
   text-align: center;
+  background-color: grey;
 }
 
 .socialIcons li {
-  background-color: yellow;
+ 
   list-style: none;
   display: inline-block;
-  margin: 4px;
+ color: white;
   border-radius: 2em;
   overflow: hidden;
 }
 
 .socialIcons li a {
   display: block;
-  padding: .87em;
-  min-width: 2.89571429em;
-  max-width: 2.89571429em;
+  
   
   white-space: nowrap;
-  line-height: 1em; /*it's working only when you write text with icon*/
-  transition: 0.5s;
+  line-height: 1.4em; /*it's working only when you write text with icon*/
+
   text-decoration: none;
   font-family: arial;
-  color: #fff;
+ color: white;
 }
 
-.socialIcons li i {
-  margin-right: 1em;
-}
 
-.socialIcons li:hover a {
-  max-width: 200px;
-  padding-right: 1em;
-}
 
-.socialIcons .facebook {
-  background-color: #3b5998;
-}
 
-.socialIcons .twitter {
-  background-color: #00aced;
-}
 
-.socialIcons .instagram {
-  background-color: #cd486b;
-}
-
-.socialIcons .pinterest {
-  background-color: #c92228;
-}
-
-.socialIcons .steam {
-  background-color: #666666;
-}
 
 div.scrollmenu {
   background-color: #333;
@@ -412,11 +396,11 @@ background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, F
     transition: 0.5s;
     background-size: 200% auto;
     color: white;            
-    width: 40%;
+  
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    display: block;
+    
   }
 
   .button-style:hover {
@@ -426,8 +410,11 @@ background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, F
   }
 
 #back-to-top{
-  color: #FFB75E;
-  
+  color: black;
+}
+
+#phone{
+  color: #3DDC84;
 }
   
  
