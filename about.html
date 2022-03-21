@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <div class="loader_bg">
+      <div class="loader"></div>
+    </div>
        <!-- Navbar start -->
     <iframe
     src="./header.html"
@@ -112,6 +115,12 @@
       ></iframe>
   
       <!-- Footer -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
 
       <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

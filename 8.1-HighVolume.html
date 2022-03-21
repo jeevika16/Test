@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <div class="loader_bg">
+      <div class="loader"></div>
+    </div>
     <iframe
       src="./header.html"
       onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
@@ -319,6 +322,12 @@
     ></iframe>
 
     <!-- footer end -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
