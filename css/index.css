@@ -8,7 +8,7 @@
 @media (max-width: 767px) {
   .top-carousel-caption {
     top: 15%;
-    left: 20%;
+    left: 20%; 
     font-weight: 600;
     font-size: 1.6em;
     animation-name: example;
@@ -302,7 +302,7 @@ div.scrollmenu a:hover {
   padding: 0;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
-.rounded a {
+.rounded li {
   position: relative;
   display: block;
   font-size: 1.1em;
@@ -314,13 +314,13 @@ div.scrollmenu a:hover {
   border-radius: 0.3em;
   transition: 0.3s ease-out;
 }
-.rounded a:hover {
+.rounded li:hover {
   background: #e9e4e0;
 }
-.rounded a:hover:before {
+.rounded li:hover:before {
   transform: rotate(360deg);
 }
-.rounded a:before {
+.rounded li:before {
   content: counter(li);
   counter-increment: li;
   position: absolute;
@@ -461,5 +461,34 @@ background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, F
 #phone{
   color: #3DDC84;
 }
+footer{
+  background-color: black;
+}
+.footer-spacing{
+  line-height:40px;
+}
+
+
+.top-social a {
+  padding:13px;
+  color:#fff;
+  }
   
- 
+  .top-social a:hover {
+  color:#FF7D00;
+  }
+ @media(max-width:700px){
+   .footer-img{
+     width: 40%;
+     margin-left: auto;
+     margin-right: auto;
+   }
+ }
+ @media(min-width:701px){
+  .footer-img{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+ }
+
