@@ -505,5 +505,31 @@ footer{
  }
  .top-bar{
   background-color: rgb(102, 102, 102);
+  margin-left: auto;
+  margin-right: auto;
  }
+
+ @media(max-width:450px){
+   .top-bar{
+     font-size:.6rem
+   }
+ }
+ @media(max-width:326px){
+   .top-bar{
+     font-size:.5rem
+   }
+ }
+ @media(max-width:300px){
+   .top-bar{
+     font-size:.45rem
+   }
+ }
+ @media(max-width:767px){
+   .top-2col{
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+   }
+ }
+
 
