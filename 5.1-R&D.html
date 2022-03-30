@@ -25,13 +25,16 @@
   </head>
   <body>
     <div class="loader_bg">
-      <div class="loader"></div>
+      <img
+        src="./images/MICHAEL LOGO 2.png"
+        class="img-fluid mx-auto img-loader"
+      />
+      <div class="progress-value"></div>
     </div>
     <iframe
       src="./header.html"
       onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
     ></iframe>
-
 
     <!-- top-Image start -->
     <div>
@@ -53,9 +56,14 @@
             enables our customers to map their way for the bulk.
           </p>
 
-          <p class="para-spacing my-3">Micro Controller based Products as per Customer Application.</p>
+          <p class="para-spacing my-3">
+            Micro Controller based Products as per Customer Application.
+          </p>
 
-          <p class="para-spacing">We offer complete box building and high level assembly services including</p>
+          <p class="para-spacing">
+            We offer complete box building and high level assembly services
+            including
+          </p>
           <ul class="list-content">
             <li>PCB Gerber Development</li>
             <li>Hardwaare Development</li>
@@ -76,9 +84,9 @@
     <!-- footer end -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        setTimeout(function(){
-            $('.loader_bg').fadeToggle();
-        }, 1500);
+      setTimeout(function () {
+        $(".loader_bg").fadeToggle();
+      }, 1500);
     </script>
 
     <script

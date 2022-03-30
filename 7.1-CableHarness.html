@@ -25,14 +25,16 @@
   </head>
   <body>
     <div class="loader_bg">
-      <div class="loader"></div>
+      <img
+        src="./images/MICHAEL LOGO 2.png"
+        class="img-fluid mx-auto img-loader"
+      />
+      <div class="progress-value"></div>
     </div>
     <iframe
       src="./header.html"
       onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
     ></iframe>
-    
-
 
     <!-- top-Image start -->
     <div>
@@ -55,8 +57,6 @@
             for automotive systems, computers, electronics, HVAC controls, and
             more to transmit signals or electric powers
           </p>
-
-         
         </div>
       </div>
     </div>
@@ -71,9 +71,9 @@
     <!-- footer end -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        setTimeout(function(){
-            $('.loader_bg').fadeToggle();
-        }, 1500);
+      setTimeout(function () {
+        $(".loader_bg").fadeToggle();
+      }, 1500);
     </script>
 
     <script

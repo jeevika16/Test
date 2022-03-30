@@ -24,15 +24,17 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <div class="bg_loader">
-      <div class="loader"></div>
+    <div class="loader_bg">
+      <img
+        src="./images/MICHAEL LOGO 2.png"
+        class="img-fluid mx-auto img-loader"
+      />
+      <div class="progress-value"></div>
     </div>
     <iframe
       src="./header.html"
       onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
     ></iframe>
-    
-
 
     <!-- top-Image start -->
     <div>
@@ -67,18 +69,18 @@
             Our parts procurement services could offer:
           </p>
           <ul class="list-content">
-           <li>PCB design and BOM check</li>
-           <li>Low cost for parts sample</li>
-           <li>Large quantity discounts</li>
-           <li>Quick turn PCBA Prototype</li>
-           <li>Competitive parts cost from local supplier</li>
-           <li>Assured quality from reliable component distributors</li>
-           <li>Worldwide network with access to international stock</li>
+            <li>PCB design and BOM check</li>
+            <li>Low cost for parts sample</li>
+            <li>Large quantity discounts</li>
+            <li>Quick turn PCBA Prototype</li>
+            <li>Competitive parts cost from local supplier</li>
+            <li>Assured quality from reliable component distributors</li>
+            <li>Worldwide network with access to international stock</li>
           </ul>
 
           <h3 class="heading-medium">Parts Supplier:</h3>
-          <img src="./images/part-supplier-1.jpg" alt="" srcset="">
-          <img src="./images/part-supplier-2.jpg" alt="" srcset="">
+          <img src="./images/part-supplier-1.jpg" alt="" srcset="" />
+          <img src="./images/part-supplier-2.jpg" alt="" srcset="" />
         </div>
       </div>
     </div>
@@ -93,9 +95,9 @@
     <!-- footer end -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        setTimeout(function(){
-            $('.loader_bg').fadeToggle();
-        }, 1500);
+      setTimeout(function () {
+        $(".loader_bg").fadeToggle();
+      }, 1500);
     </script>
 
     <script
