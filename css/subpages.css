@@ -79,7 +79,7 @@ div.list-style-column {
   margin-bottom: 10px;
 }
 .collapse-style,
-.card-body,.navbar {
+.card-body {
   background: #ece9e6; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to left,
